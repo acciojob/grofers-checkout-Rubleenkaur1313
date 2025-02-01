@@ -1,9 +1,4 @@
-const getSumBtn = document.createElement("button");
-getSumBtn.append("Get Total Price");
-document.body.appendChild(getSumBtn);
-
-const getSum = () => {
-	document.getElementById('calculateTotal').addEventListener('click', function() {
+document.getElementById('calculateTotal').addEventListener('click', function() {
     // Select all price elements
     const priceElements = document.querySelectorAll('.prices');
     let totalPrice = 0;
@@ -24,11 +19,6 @@ const getSum = () => {
     newRow.appendChild(newCell);
     
     // Append the new row to the table
-    table.appendChild(newRow);
+    table.appendChild(newRow)
 });
-
-  
-};
-
-getSumBtn.addEventListener("click", getSum);
 
